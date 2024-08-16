@@ -1,0 +1,22 @@
+[debug] [2024-08-15T06:32:23.893Z] ----------------------------------------------------------------------
+[debug] [2024-08-15T06:32:23.895Z] Command:       /usr/local/bin/firebase /Users/andweleancheta/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase apps:create android tcap (android) --package-name=tcap --json --project=tcap-2024
+[debug] [2024-08-15T06:32:23.895Z] CLI Version:   13.15.1
+[debug] [2024-08-15T06:32:23.895Z] Platform:      darwin
+[debug] [2024-08-15T06:32:23.896Z] Node Version:  v18.5.0
+[debug] [2024-08-15T06:32:23.897Z] Time:          Thu Aug 15 2024 16:32:23 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2024-08-15T06:32:23.897Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-15T06:32:23.907Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-15T06:32:23.909Z] > authorizing via signed-in user (andwele.ancheta@gmail.com)
+[info] Create your ANDROID app in project tcap-2024:
+[debug] [2024-08-15T06:32:23.913Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/tcap-2024/androidApps [none]
+[debug] [2024-08-15T06:32:23.914Z] >>> [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/tcap-2024/androidApps {"displayName":"tcap (android)","packageName":"tcap"}
+[debug] [2024-08-15T06:32:24.565Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/tcap-2024/androidApps 400
+[debug] [2024-08-15T06:32:24.567Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/tcap-2024/androidApps {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT"}}
+[debug] [2024-08-15T06:32:24.571Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2024-08-15T06:32:24.850Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at responseToError (/Users/andweleancheta/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/andweleancheta/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to create Android app for project tcap-2024. See firebase-debug.log for more info.
