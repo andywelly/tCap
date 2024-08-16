@@ -8,8 +8,9 @@ import 'package:modular_ui/modular_ui.dart';
 
 class GroupPage extends StatefulWidget {
   final String _groupName;
+  final String _prompt;
 
-  GroupPage(this._groupName);
+  GroupPage(this._prompt, this._groupName);
 
   @override
   State<GroupPage> createState() => _GroupPageState();
@@ -30,7 +31,7 @@ class _GroupPageState extends State<GroupPage> {
         child: Column(
           children: [
             _selectedImage != null ? Image.file(_selectedImage!) : const Text("Select Image"),
-            const Text("Take a photo with your friends at dinner time"),
+            Text(widget._prompt),
             MUIPrimaryButton(
               text: "Camera Roll",
               onPressed: () {

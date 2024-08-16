@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'group_page.dart';
+import 'package:tcap/screens/group_info.dart';
 import 'package:modular_ui/modular_ui.dart';
 
 class GroupCard extends StatelessWidget {
@@ -21,7 +21,7 @@ class GroupCard extends StatelessWidget {
                       MUIPrimaryButton(
                         text: "Open Group", 
                         onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupPage("Group One")));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupInfo("Group One")));
                       },)
                     ],
                   ),
@@ -36,7 +36,7 @@ class GroupCard extends StatelessWidget {
                       MUIPrimaryButton(
                         text: "Open Group", 
                         onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupPage("Group Two")));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupInfo("Group Two")));
                       },)
                     ],
                   ),
@@ -51,7 +51,7 @@ class GroupCard extends StatelessWidget {
                       MUIPrimaryButton(
                         text: "Open Group", 
                         onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupPage("Group Three")));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => GroupInfo("Group Three")));
                       },)
                     ],
                   ),
